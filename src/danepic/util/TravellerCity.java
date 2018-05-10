@@ -26,6 +26,11 @@ public class TravellerCity {
 		System.out.println("Cidades visitadas: " + visitedCities.toString());
 		
 		while(contador < visitedCities.size()) {
+			if(visitedCities.size() == 9) {
+				nextCity = 99;
+				break;
+			}
+			
 			nextCity = random.nextInt(9);
 			//System.out.println("Próxima cidade: " + nextCity);
 			
